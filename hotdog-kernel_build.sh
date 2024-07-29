@@ -1,4 +1,4 @@
-git clone https://github.com/arminask/linux.git --depth 1 linux
+git clone https://github.com/arminask/sm8150-mainline.git -b nabu-6.8 --depth 1 linux
 cd linux
 make -j$(nproc) ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- defconfig sm8150.config
 make -j$(nproc) ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
